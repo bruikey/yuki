@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <!-- Fixed link tag -->
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- Added a line break tag to create space between the div and h1 elements -->
+    <br>
+
+    <!-- Added text content to the h1 element -->
+    <h1 id="website-name"></h1>
+
+<script type="text/javascript">
+
+      // Define the website name as a constant variable
+const websiteName = "Yuki Reads !!!";
+
+      // Get the heading element by its ID attribute value
+const heading = document.getElementById("website-name");
+
+      // Loop through each letter of the website name and create a separate span element for it, then append it to the heading element
+for (let i = 0; i < websiteName.length; i++) {
+  const letter = document.createElement("span");
+  letter.className = "letter";
+letter.textContent = websiteName[i]; //Fixed: Only one character should be added at a time.
+  heading.appendChild(letter);
+}
+ 
+    </script>
+
+<div class="image-container">
+  <img src="/static/yuki_boi.png" alt="floating_image">
+</div>
+
+
+
+    
+  </body>
+</html>
